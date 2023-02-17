@@ -108,6 +108,22 @@ body {
   margin-top: 2.8rem;
 }
 
+.prev, .play, .next {
+  cursor: pointer;
+}
+
+.prev:hover{
+  opacity: 0.5;
+}
+
+.play:hover{
+  opacity: 0.5;
+}
+
+.next:hover{
+  opacity: 0.5;
+}
+
 .track {
   position: relative;
   margin-top: 2.8rem;
@@ -143,4 +159,33 @@ body {
   justify-content: space-between;
 
   margin-top: 0.96rem;
+}
+
+
+@media (max-width: 670px) {
+
+  #app {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 27rem;
+    
+    margin: auto;
+    height: auto;
+
+    padding-block: 6rem;
+  }
+
+  .horizontal .controls {
+    padding-inline: 3rem;
+  }
+
+  .cover {
+    width: 13rem;
+    height: 9rem;
+  }
+
+  .info-wrapper {
+    gap: 1.6rem;
+  }
 }
